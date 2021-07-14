@@ -80,6 +80,7 @@ nav ul li a:hover {
     margin-top: 121px;
 }
 
+
 .banner-title {
     margin-right: 120px;
 }
@@ -93,6 +94,12 @@ nav ul li a:hover {
 .banner-picture img {
     width: 556.01px;
     height: 438px;
+
+}
+
+.banner-picture img:hover {
+    transform: rotate(360deg);
+    transition: transform 3s ease;
 }
 
 /* Banner Container Section CSS Ends */
@@ -113,14 +120,13 @@ nav ul li a:hover {
 
 .player {
     width: 300px;
-    height: 474px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     padding: 15px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
 .player-picture img {
@@ -283,6 +289,12 @@ footer {
         height: 695px;
     }
 
+    nav {
+        justify-content: flex-end;
+        margin-right: 50px;
+
+    }
+
     nav ul {
         display: none;
     }
@@ -299,7 +311,7 @@ footer {
     .banner-picture img {
         width: 329px;
         height: 259px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     /* Player Albu, Section CSS Starts */
@@ -317,28 +329,7 @@ footer {
     }
 
 
-    .container {
-        padding: 20px 0px;
-    }
 
-    .video-container {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    .video-title h1 {
-        color: wheat;
-        font-size: 30px;
-    }
-
-    .videos {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
-    .video {
-        border: 1px solid #ffe6e9;
-    }
 
 
     /* Highlight Section CSS Starts */
@@ -402,6 +393,32 @@ footer {
     }
 
     /* Legend Player Section CSS Ends */
+
+    /* Video Album Section CSS Starts */
+    .container {
+        padding: 20px 0px;
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .video-title h1 {
+        color: wheat;
+        font-size: 30px;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .video {
+        border: 1px solid #ffe6e9;
+    }
+
+    /* Video Album Section CSS Ends */
 
 
     /* Footer Section CSS Starts */
