@@ -80,7 +80,6 @@ nav ul li a:hover {
     margin-top: 121px;
 }
 
-
 .banner-title {
     margin-right: 120px;
 }
@@ -191,7 +190,6 @@ nav ul li a:hover {
 
 .legend-info {
     text-align: center;
-    /* line-height: 16px; */
     color: antiquewhite;
 }
 
@@ -209,7 +207,6 @@ nav ul li a:hover {
 .legend-info h3 {
     font-size: 30px;
 }
-
 
 /* Legend Player Section CSS Ends */
 
@@ -247,6 +244,8 @@ nav ul li a:hover {
     width: 400px;
     height: 270px;
 }
+
+/* Video Album Section CSS Ends */
 
 /* Footer Section CSS Starts */
 
@@ -433,3 +432,5 @@ footer {
     /* Footer Sectoin CSS Ends */
 
 }
+
+/* Media Quert CSS */
