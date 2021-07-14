@@ -243,6 +243,11 @@ nav ul li a:hover {
     border: 1px solid #ffe6e9;
 }
 
+.video iframe {
+    width: 400px;
+    height: 270px;
+}
+
 /* Footer Section CSS Starts */
 
 footer {
@@ -414,8 +419,9 @@ footer {
         grid-gap: 20px;
     }
 
-    .video {
-        border: 1px solid #ffe6e9;
+    .video iframe {
+        width: 80%;
+        height: 100%;
     }
 
     /* Video Album Section CSS Ends */
