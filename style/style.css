@@ -8,12 +8,29 @@ body {
     /* background: #2D25A0; */
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-}
-
+h1,
 h2 {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    background: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.button:hover {
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgb(46, 84, 122);
+    transition: 0.7s;
+}
+
+.button i {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 /* General CSS Ends */
@@ -38,27 +55,23 @@ nav ul {
 nav ul li {
     list-style: none;
     margin-right: 36px;
+    /* transform: scale(1.2); */
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+
 }
 
-.login a {
-    text-decoration: none;
-    background: #E02C6D;
-    color: white;
-    padding: 10px 24px;
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
-.login a:hover {
-    background-color: crimson;
-    color: #332f2f;
-}
+nav ul li a:hover {
+    color: tomato;
 
-.login i {
-    margin-right: 8px;
 }
 
 
@@ -80,18 +93,7 @@ nav ul li a {
     color: white;
 }
 
-.button {
-    text-decoration: none;
-    background: #E02C6D;
-    color: white;
-    padding: 10px 24px;
-    font-size: 16px;
-    margin-top: 24px;
-}
 
-.button i {
-    margin-left: 8px;
-}
 
 .banner-picture img {
     width: 556.01px;
@@ -168,6 +170,77 @@ nav ul li a {
 .hightlight-img img {
     width: 567px;
     height: 427px;
+}
+
+/* Legend Player Bonus part CSS */
+
+.legend-player {
+    height: 100vh;
+    background: linear-gradient(45deg, #608297, #ec2F4B);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.legend-info {
+    text-align: center;
+    /* line-height: 16px; */
+    color: antiquewhite;
+}
+
+.legend-info h1 {
+    font-size: 55px;
+}
+
+.legend-info h2 {
+    font-size: 60px;
+    background: -webkit-linear-gradient(45deg, #2069ad, #fcf7ce, #f1e03e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.legend-info h3 {
+    font-size: 30px;
+}
+
+.legend-info img {
+    transition: transform 0.3s;
+}
+
+.legend-info img:hover {
+    transform: rotate(360deg);
+
+}
+
+/* Bonus part CSS */
+.sponsor {
+    text-align: center;
+    padding: 40px;
+}
+
+.sponsor-title h1 {
+    display: inline-block;
+    font-size: 42px;
+    border-bottom: 2px solid rgb(107, 198, 201);
+    margin-bottom: 30px;
+}
+
+.sponsor-logo {
+    margin: 10px auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sponsor-logo img {
+    height: 120px;
+    width: 176px;
+    padding: 25px;
 }
 
 
