@@ -23,7 +23,7 @@ h2 {
 
 .button:hover {
     box-shadow: 5px 5px 10px rgb(46, 84, 122);
-    transition: 0.7s;
+    transition: 0.2s;
 }
 
 .button i {
@@ -317,7 +317,28 @@ footer {
     }
 
 
-    .container {}
+    .container {
+        padding: 20px 0px;
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .video-title h1 {
+        color: wheat;
+        font-size: 30px;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .video {
+        border: 1px solid #ffe6e9;
+    }
 
 
     /* Highlight Section CSS Starts */
@@ -357,6 +378,7 @@ footer {
         height: 100%;
         width: 100%;
         flex-direction: column;
+        padding: 20px 0px;
     }
 
     .legend-player img {
