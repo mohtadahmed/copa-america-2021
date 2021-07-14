@@ -222,7 +222,7 @@ nav ul li a:hover {
 
 .video-container {
     text-align: center;
-    width: 80%;
+    width: 83%;
     margin: 15px auto;
 }
 
@@ -332,10 +332,6 @@ footer {
         grid-column-gap: 30px;
         margin-top: 70px;
     }
-
-
-
-
 
     /* Highlight Section CSS Starts */
     .highlight-container {
