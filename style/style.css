@@ -86,6 +86,7 @@ nav ul li a {
     color: white;
     padding: 10px 24px;
     font-size: 16px;
+    margin-top: 24px;
 }
 
 .button i {
@@ -135,4 +136,72 @@ nav ul li a {
 
 .player-info p {
     color: #6C6C6C;
+}
+
+
+
+/* Highlight Section CSS Starts */
+.highlight-container {
+    background-color: #332f2f;
+    color: #ffffff;
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.highlight-title {
+    width: 469px;
+    padding: 20px;
+}
+
+.highlight-title h1 {
+    font-size: 50px;
+}
+
+.highlight-title p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.hightlight-img img {
+    width: 567px;
+    height: 427px;
+}
+
+
+/* Footer Section CSS Starts */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 140px auto;
+}
+
+.footer-img img {
+    width: 484px;
+    margin-bottom: 20px;
+}
+
+.fab {
+    margin-right: 14px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: lightgray;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    color: white;
+    background-color: #2D25A0;
+    transform: scale(1.2);
+}
+
+.copyright p {
+    font-size: 18px;
 }
