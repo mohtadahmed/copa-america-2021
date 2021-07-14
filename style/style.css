@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
-    /* background: #2D25A0; */
 }
 
 h1,
@@ -23,7 +22,6 @@ h2 {
 }
 
 .button:hover {
-    font-size: 18px;
     box-shadow: 5px 5px 10px rgb(46, 84, 122);
     transition: 0.7s;
 }
@@ -55,7 +53,6 @@ nav ul {
 nav ul li {
     list-style: none;
     margin-right: 36px;
-    /* transform: scale(1.2); */
 }
 
 nav ul li a {
@@ -71,11 +68,11 @@ nav ul li:hover {
 
 nav ul li a:hover {
     color: tomato;
-
 }
 
+/* Header Section CSS Ends */
 
-/* Banner Container Starts */
+/* Banner Container Sectoin CSS Starts */
 .banner-container {
     display: flex;
     justify-content: center;
@@ -93,12 +90,12 @@ nav ul li a:hover {
     color: white;
 }
 
-
-
 .banner-picture img {
     width: 556.01px;
     height: 438px;
 }
+
+/* Banner Container Section CSS Ends */
 
 /* Player Album Section CSS Starts */
 .player-album {
@@ -140,6 +137,7 @@ nav ul li a:hover {
     color: #6C6C6C;
 }
 
+/* Player Album Section CSS Ends */
 
 
 /* Highlight Section CSS Starts */
@@ -172,7 +170,9 @@ nav ul li a:hover {
     height: 427px;
 }
 
-/* Legend Player Bonus part CSS */
+/* Highlight Section CSS Ends */
+
+/* Legend Player Section CSS Starts */
 
 .legend-player {
     height: 100vh;
@@ -182,8 +182,6 @@ nav ul li a:hover {
     justify-content: space-evenly;
     align-items: center;
 }
-
-
 
 .legend-info {
     text-align: center;
@@ -206,43 +204,38 @@ nav ul li a:hover {
     font-size: 30px;
 }
 
-.legend-info img {
-    transition: transform 0.3s;
-}
 
-.legend-info img:hover {
-    transform: rotate(360deg);
+/* Legend Player Section CSS Ends */
 
-}
+/* Video Album Section CSS Starts */
 
-/* Bonus part CSS */
-.sponsor {
-    text-align: center;
-    padding: 40px;
-}
-
-.sponsor-title h1 {
-    display: inline-block;
-    font-size: 42px;
-    border-bottom: 2px solid rgb(107, 198, 201);
-    margin-bottom: 30px;
-}
-
-.sponsor-logo {
-    margin: 10px auto;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.sponsor-logo img {
-    height: 120px;
-    width: 176px;
+.container {
+    background-color: #608297be;
     padding: 25px;
 }
 
+.video-container {
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.video-title h1 {
+    color: wheat;
+    font-size: 45px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ffe6e9;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.video {
+    border: 1px solid #ffe6e9;
+}
 
 /* Footer Section CSS Starts */
 
@@ -277,4 +270,125 @@ footer {
 
 .copyright p {
     font-size: 18px;
+}
+
+/* Footer Sectoin CSS Ends */
+
+
+/* Media Query CSS */
+/* Media Query Secton for Mobile Devices under 688px */
+@media only screen and (max-width: 688px) {
+    header {
+        width: 100%;
+        height: 695px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .banner-title h1 {
+        font-size: 30px;
+    }
+
+    .banner-picture img {
+        width: 329px;
+        height: 259px;
+        margin-top: 50px;
+    }
+
+    /* Player Albu, Section CSS Starts */
+    .player-album {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 30px;
+        margin-top: 70px;
+    }
+
+
+    .container {}
+
+
+    /* Highlight Section CSS Starts */
+    .highlight-container {
+        height: 100%;
+        width: 100%;
+        padding: 15px 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .highlight-title {
+        width: 80%;
+        padding: 0px;
+        margin: 10px auto;
+    }
+
+    .highlight-title h1 {
+        font-size: 30px;
+    }
+
+    .highlight-title p {
+        margin-bottom: 30px;
+    }
+
+    .hightlight-img img {
+        width: 328px;
+        height: 248px;
+        margin-top: 50px;
+    }
+
+
+    /* Legend Player Section CSS Starts */
+
+    .legend-player {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .legend-player img {
+        width: 100%;
+        height: 50%;
+        margin-top: 50px;
+    }
+
+    .legend-info {
+        text-align: center;
+        /* line-height: 16px; */
+        color: antiquewhite;
+    }
+
+    .legend-info h1 {
+        font-size: 55px;
+    }
+
+    .legend-info h2 {
+        font-size: 45px;
+    }
+
+    /* Legend Player Section CSS Ends */
+
+
+    /* Footer Section CSS Starts */
+
+    .footer-img img {
+        width: 272px;
+        margin-bottom: 20px;
+    }
+
+    /* Footer Sectoin CSS Ends */
+
 }
